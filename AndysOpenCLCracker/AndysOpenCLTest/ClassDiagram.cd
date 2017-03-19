@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OCLBuffer">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARGAMCIRAwAwNhAAAQKAAEEBEAABACEgAAAAAAABBQ=</HashCode>
+      <FileName>OCLBuffer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OCLCommandQueue">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAECACCCgGAgAACAAAAAAIAAAAAAIAIKAAAAAAAAAAo=</HashCode>
+      <FileName>OCLCommandQueue.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OCLContext">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AECGAAAAAAYAAAAAABAAAAgAABBAAAAMACAACgQAIAA=</HashCode>
+      <FileName>OCLContext.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OCLCore">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="OCLCore::LoadDeviceException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>OCLCore.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="OCLCore::InvalidSettingsException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>OCLCore.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="OCLCore::PasswordGeneratorException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>OCLCore.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>jCi4OGADJYJiAiKQAQQKIYUApECQREACyEQDAkkCJAo=</HashCode>
+      <FileName>OCLCore.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OCLDevice">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DEAsMICSAQKAAAAJAjAIAIAKRMiGAggAIQACwCgFBAA=</HashCode>
+      <FileName>OCLDevice.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OCLDeviceTypeCollection">
+    <Position X="20" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAYACAAFwAAAFEIAKACICgEAGHgDBkRQQACAhDQAk=</HashCode>
+      <FileName>OCLDeviceTypeCollection.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OCLKernel">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBAEIAAAAIAAAAAAAAAIAIAAAEAAAEAAAAgAAAAgBAM=</HashCode>
+      <FileName>OCLKernel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OCLPlatform">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAACAAEAAAAmAAIgAAAQAAQEQGEQAAACAAQAoMBAo=</HashCode>
+      <FileName>OCLPlatform.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OCLPlatformSelector">
+    <Position X="23.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAASIgAABAEIAAAAAKEBAEIAAgAADAAAIAACAAAoAAA=</HashCode>
+      <FileName>OCLPlatformSelector.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OCLSettings">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="OCLSettings::SettingsSerialisationException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>OCLSettings.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>DJEAiMQAJAiAwkDEAAQCoAAACAAAAgJAQgwsAEAgABE=</HashCode>
+      <FileName>OCLSettings.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ImplementedKernels">
+    <Position X="11.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAgASAAAAAAAIAADAAAAECAAAAAAAACAQAEAAAAAAAA=</HashCode>
+      <FileName>OCLWrapper.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OCLWrapper">
+    <Position X="4" Y="4.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="OCLWrapper::UnimplementedFunctionException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>OCLWrapper.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="OCLWrapper::OCLSetupException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>OCLWrapper.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="OCLWrapper::RainbowTableGenerationException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>OCLWrapper.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="OCLWrapper::RainbowTableLookupException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>OCLWrapper.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="OCLWrapper::HexConversionError" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>OCLWrapper.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAQAAEkIAAAgAQQACQAABIQAIIAABEgAABABAICEAAA=</HashCode>
+      <FileName>OCLWrapper.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CrackingAlphabet">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAIQAIAQAAASACAAAAAAACAAAAACDAAQAAQAAEAA=</HashCode>
+      <FileName>CrackingAlphabet.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Password">
+    <Position X="9.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEgAIAAAAAgUQAEAASAAgAEAAAACQAggggAAAAA=</HashCode>
+      <FileName>Password.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PasswordGenerator">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAABgAAAKAFgBABBRSAAMkAAAADgBDIAIAoCwgpgBAQ=</HashCode>
+      <FileName>PasswordGenerator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InfIntException">
+    <Position X="0.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQACAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InfInt.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InfInt">
+    <Position X="25.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAUgIAAAgAQAgJAQIEBBYgAAAAgCAMAAAggQAQACAA=</HashCode>
+      <FileName>InfInt.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AndysOpenCLTest">
+    <Position X="18.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgACACEAAABAEBAQAEpIABRICsAEIEAAABAIBokoQgM=</HashCode>
+      <FileName>AndysOpenCLTest.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExampleOCLWorkItems">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAwBAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExampleOCLWorkItems.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RainbowBlock">
+    <Position X="11.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UABAAAMAYAAAQQAAAAAAAAAACAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>RainbowBlock.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RainbowHash">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAIAAAAAEAAAAAACAAACIgEAAAAAAAEBAQAAAAAAA=</HashCode>
+      <FileName>RainbowHash.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RainbowTable">
+    <Position X="27" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAxIIAAEQQAABCAAAAQAAAIARgBAAgwgIAAECAA=</HashCode>
+      <FileName>RainbowTable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleApp">
+    <Position X="5.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQAAAgRABAAAgIAgAACAAAABAAAAEgAAARAAQAgAAAE=</HashCode>
+      <FileName>ConsoleApp.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Timer">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAIAAAAAAAAQBAAAIABAAAAAAAAAAAkAEAAA=</HashCode>
+      <FileName>C:\Users\Andrew\Documents\Visual Studio 2012\Projects\AndysOpenCLTest\OpenCLAppLib\Timer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Typedef Name="ELEM_TYPE" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InfInt.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PRODUCT_TYPE" Collapsed="true">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InfInt.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="DeviceTypes">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAgAAAAAiIAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>OCLTypeEnums.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CrackingMode">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAQAAAAAAAAAEAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OCLTypeEnums.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HashAlgorithms">
+    <Position X="4" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAEAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OCLTypeEnums.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

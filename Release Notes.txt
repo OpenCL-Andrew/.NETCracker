@@ -1,0 +1,31 @@
+Dependencies:
+-Currently only x86 builds.
+-Relies upon: OpenCL 1.2 bindings (for CL.hpp support) (compiled against APP SDK 2.9 library) and Boost C++ v1.55.0 (statically compiled / linked) boost.Thread and boost.Serialization libs. Later boost libraries may work, but have not been tested.
+-Compiled with VS2012, with MFC support (though I'm not really using this for now - in the hope the same code can be ported to run on 'nix-based systems with less work)
+-src included for the following open-source libs: InfInt (infinite int math support) & base64
+
+Build Instructions:
+-Download and compile the C++ Boost libraries boost.Thread and boost.Serialization (and dependancies) as static libs. I've only tested v1.55.0, though you may find later versions will work too.
+-Download and install a suitable OpenCL runtime for your platform. I've tested the AMD APP SDK 2.9 (it needs OpenCL 1.2 with C++ bindings in CL.hpp) on both an HD6870 and R9 290X GPUs, as well as Phenom II 560BE dual-core and FX8350 octo-core CPUs. I've also tested the Intel OpenCL CPU drivers on an i5 in a MacBook (on a Windows VM).
+-Visual Studio 2012 was used to compile the code, though later versions should be fine. Update the VS project properties:
+VC++ Directores -> Include Directories 
+VC++ Directores -> Library Directories
+C/C++ -> General -> Additional Include Directories
+Linker -> General -> Additional Library Directories
+-If you want to run the code in debug mode, you'll also need to download and install visual leak detector (VLD) or just comment out the header include in ConsoleApp.cpp.
+
+Current Version:
+
+-There is some optimistic memory management, particularly within the password generation module.  Some hardening around this area is needed.  In the case that eveything works and the program executes a single cracking run only, none should occur, but a second run causes some leaks e.g. in OCLCore.cpp lines 675 / 689.  In the even of an error some will occur too. A lot of this core code for generation of passwords is quite old now (more than 2 years) and was written for my BSc project... How one learns a lot in that time! I'd like to alter the way this works to scope things better - this would avoid some of these leaks. However, the primary focus thus far has been onoptimisation of the GPU-side code, not the CPU generation stuff.  Now that we're fastest, this can become the focus again. :)
+
+Next Version:
+-Fix leaks - general architecture of password generation / password block handling is prone to leaks. Some GPU-side leaking needs tidied up in case of crash out of cracking run.
+-Store progress to allow cancel / resuming of cracking runs.
+-Implement interface for password generation, to allow plugging-in of password dictionary module / markov-chains
+-Remove rainbow modes -  purely academic
+-Support iterating through password lengths upto and including the max length specified, ratherr than just the specified one.
+-Support for multiple ASP.NET target hashes - currently only targets one at a time - should be relatively easy to change to a list.
+
+Andrew Ruddick
+andrew.ruddick@hotmail.co.uk
+https://www.usenix.org/conference/woot16/workshop-program/presentation/ruddick

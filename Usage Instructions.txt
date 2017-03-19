@@ -1,0 +1,35 @@
+See Release Notes.txt for build instructions.
+
+-Application settings are stored in the settings.txt file that should reside in the current working directory when the application command-line utility is launched. This is an XML file that the application parses to get input.
+
+Fields are as follows:
+Alphabet -> the cracking alphabet for a brute force attack. e.g. abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 for [a-z][A-Z][0-9] etc.
+
+Algorithm:
+0 -> SHA1
+1 -> HMAC-SHA1
+2 -> PBKDF2-HMAC-SHA1 1000 iterations, 256-bit keysize
+
+passwordLength:
+The length of password candidates.  For now, I have assumed candidates to be of a given length not iterative, though this would be a trivial change.
+
+targetHash: Hex hash
+targetSalt: Hex salt
+-Both has and salt can be set through the UI to an ASP.NET hash just with copy-paste.
+
+hashOutputBytes: 32 for .NET (2x iterations over the SHA1 length (20 bytes))
+
+passwordBlockSize: Number of passwords loaded to the GPU per loop iteration and submitted for processing. Warning - set this too high and get a display driver reset / crash. NB, this needs multipled by the value set in noThreads. e.g.
+Setting noThreads to 16 and passwordBlockSize to 65536 means 16 CPU threads are spawned, which each generate 65536 password candidates.  The resultant buffer is 1,048,576 password candidates, that are transfered over the system bus to the GPU.  Then the same number of GPU work-items will be spawned GPU-side.  This number should be a power of 2.
+
+localWorkgroupSize: Number of GPU work-items per compute unit. See the paper for full explanation, but for AMD set it to 64 and NVIDIA 32. On CPU (SSE) 64 is fine for both Intel / AMD.
+
+noKernels: Leave this as 1. This option probably wanted removed, but it allows 2 separate compiled GPU kernels to flip-flop the execution (kind of like front / back buffering? but it leads to negative perf. hit, so I sacked it 
+
+off).
+
+-GUI is pretty self-explanitory, but it's worth mention that option 5 allows direct entry of ASP.NET role-provider password hashes to be pasted in from a SQL-server database and a cracking-run to be started. We're the only ones to have this feature, and we've the fastest GPU-code. ;)
+
+Andrew Ruddick
+andrew.ruddick@hotmail.co.uk
+https://www.usenix.org/conference/woot16/workshop-program/presentation/ruddick

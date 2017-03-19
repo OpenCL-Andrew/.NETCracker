@@ -1,0 +1,14 @@
+<settings class_id="0" tracking_level="1" version="0" object_id="_0">
+	<alphabet>0123456789</alphabet>
+	<mode>0</mode>
+	<algorithm>0</algorithm>
+	<genRainbowTable>0</genRainbowTable>
+	<passwordLength>5</passwordLength>
+	<targetHash>a4094ca55030ef56b5378785f4aa62e47dd34b76</targetHash>
+	<targetSalt>6b65796b65796b65796b65796b65796b</targetSalt>
+	<hashOutputBytes>20</hashOutputBytes>
+	<passwordBlockSize>100</passwordBlockSize>
+	<noThreads>10</noThreads>
+	<localWorkgroupSize>100</localWorkgroupSize>
+	<noKernels>1</noKernels>
+</settings>

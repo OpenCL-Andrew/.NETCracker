@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="OCLCore">
+      <UniqueIdentifier>{62dad68c-05c0-4fc6-909c-2a759dec5a74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OCLExecutionSettings">
+      <UniqueIdentifier>{145f10e1-1d99-4f70-9741-d645107005c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{902ae41f-df54-4724-a2ac-667a3ee2fa9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OCLTestApplicationCode">
+      <UniqueIdentifier>{6a15df41-b7a7-4484-8e99-68c0ef9c067e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RainbowStore">
+      <UniqueIdentifier>{85259952-600e-4eb6-90d8-213c208bb2cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConsoleApplication">
+      <UniqueIdentifier>{174fdcfc-b014-449f-807b-2e0cba1240d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenCLKernels">
+      <UniqueIdentifier>{d5c87644-bb40-4188-80d4-dbb09e3738e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PerfMon">
+      <UniqueIdentifier>{c80ec9e7-b4b4-4591-82d5-a4c59f51b281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HostCrypto">
+      <UniqueIdentifier>{b902745c-c32d-4c73-8c98-dc930fa53366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{78ee646d-74a6-436c-85bd-8af4bc7191b3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TestHarness.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCLCore.cpp">
+      <Filter>OCLCore</Filter>
+    </ClCompile>
+    <ClCompile Include="OCLPlatform.cpp">
+      <Filter>OCLCore</Filter>
+    </ClCompile>
+    <ClCompile Include="OCLDevice.cpp">
+      <Filter>OCLCore</Filter>
+    </ClCompile>
+    <ClCompile Include="OCLDeviceTypeCollection.cpp">
+      <Filter>OCLCore</Filter>
+    </ClCompile>
+    <ClCompile Include="OCLPlatformSelector.cpp">
+      <Filter>OCLCore</Filter>
+    </ClCompile>
+    <ClCompile Include="OCLContext.cpp">
+      <Filter>OCLCore</Filter>
+    </ClCompile>
+    <ClCompile Include="PasswordGenerator.cpp">
+      <Filter>OCLExecutionSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="InfInt.cpp">
+      <Filter>Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="CrackingAlphabet.cpp">
+      <Filter>OCLExecutionSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="Password.cpp">
+      <Filter>OCLExecutionSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="OCLKernel.cpp">
+      <Filter>OCLCore</Filter>
+    </ClCompile>
+    <ClCompile Include="OCLCommandQueue.cpp">
+      <Filter>OCLCore</Filter>
+    </ClCompile>
+    <ClCompile Include="OCLBuffer.cpp">
+      <Filter>OCLCore</Filter>
+    </ClCompile>
+    <ClCompile Include="OCLWrapper.cpp">
+      <Filter>OCLCore</Filter>
+    </ClCompile>
+    <ClCompile Include="AndysOpenCLTest.cpp">
+      <Filter>OCLTestApplicationCode</Filter>
+    </ClCompile>
+    <ClCompile Include="ExampleOCLWorkItems.cpp">
+      <Filter>OCLTestApplicationCode</Filter>
+    </ClCompile>
+    <ClCompile Include="OCLSettings.cpp">
+      <Filter>OCLCore</Filter>
+    </ClCompile>
+    <ClCompile Include="RainbowTable.cpp">
+      <Filter>RainbowStore</Filter>
+    </ClCompile>
+    <ClCompile Include="RainbowBlock.cpp">
+      <Filter>RainbowStore</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleApp.cpp">
+      <Filter>ConsoleApplication</Filter>
+    </ClCompile>
+    <ClCompile Include="RainbowHash.cpp">
+      <Filter>RainbowStore</Filter>
+    </ClCompile>
+    <ClCompile Include="base64.cpp">
+      <Filter>Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="sha1Utils.cpp">
+      <Filter>HostCrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="HmacUtils.cpp">
+      <Filter>HostCrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="FileHandle.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>PerfMon</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HMACSha1Crack.cl">
+      <Filter>OpenCLKernels</Filter>
+    </None>
+    <None Include="HmacSha1Rainbow.cl">
+      <Filter>OpenCLKernels</Filter>
+    </None>
+    <None Include="sha1Crack.cl">
+      <Filter>OpenCLKernels</Filter>
+    </None>
+    <None Include="Sha1Rainbow.cl">
+      <Filter>OpenCLKernels</Filter>
+    </None>
+    <None Include="PBKDF2Rainbow.cl">
+      <Filter>OpenCLKernels</Filter>
+    </None>
+    <None Include="ClassDiagram.cd" />
+    <None Include="PBKDF2Crack.cl">
+      <Filter>OpenCLKernels</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OCLCore.h">
+      <Filter>OCLCore</Filter>
+    </ClInclude>
+    <ClInclude Include="OCLPlatform.h">
+      <Filter>OCLCore</Filter>
+    </ClInclude>
+    <ClInclude Include="OCLDevice.h">
+      <Filter>OCLCore</Filter>
+    </ClInclude>
+    <ClInclude Include="OCLDeviceTypeCollection.h">
+      <Filter>OCLCore</Filter>
+    </ClInclude>
+    <ClInclude Include="OCLTypeEnums.h">
+      <Filter>OCLCore</Filter>
+    </ClInclude>
+    <ClInclude Include="OCLPlatformSelector.h">
+      <Filter>OCLCore</Filter>
+    </ClInclude>
+    <ClInclude Include="OCLContext.h">
+      <Filter>OCLCore</Filter>
+    </ClInclude>
+    <ClInclude Include="OCLErrorChecker.h">
+      <Filter>OCLCore</Filter>
+    </ClInclude>
+    <ClInclude Include="PasswordGenerator.h">
+      <Filter>OCLExecutionSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InfInt.h">
+      <Filter>Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="CrackingAlphabet.h">
+      <Filter>OCLExecutionSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="Password.h">
+      <Filter>OCLExecutionSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="OCLKernel.h">
+      <Filter>OCLCore</Filter>
+    </ClInclude>
+    <ClInclude Include="OCLCommandQueue.h">
+      <Filter>OCLCore</Filter>
+    </ClInclude>
+    <ClInclude Include="OCLBuffer.h">
+      <Filter>OCLCore</Filter>
+    </ClInclude>
+    <ClInclude Include="OCLWrapper.h">
+      <Filter>OCLCore</Filter>
+    </ClInclude>
+    <ClInclude Include="ExampleOCLWorkItems.h">
+      <Filter>OCLTestApplicationCode</Filter>
+    </ClInclude>
+    <ClInclude Include="AndysOpenCLTest.h">
+      <Filter>OCLTestApplicationCode</Filter>
+    </ClInclude>
+    <ClInclude Include="OCLSettings.h">
+      <Filter>OCLCore</Filter>
+    </ClInclude>
+    <ClInclude Include="RainbowTable.h">
+      <Filter>RainbowStore</Filter>
+    </ClInclude>
+    <ClInclude Include="RainbowBlock.h">
+      <Filter>RainbowStore</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleApp.h">
+      <Filter>ConsoleApplication</Filter>
+    </ClInclude>
+    <ClInclude Include="RainbowHash.h">
+      <Filter>RainbowStore</Filter>
+    </ClInclude>
+    <ClInclude Include="base64.h">
+      <Filter>Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="sha1Utils.h">
+      <Filter>HostCrypto</Filter>
+    </ClInclude>
+    <ClInclude Include="HmacUtils.h">
+      <Filter>HostCrypto</Filter>
+    </ClInclude>
+    <ClInclude Include="FileHandle.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>PerfMon</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt">
+      <Filter>Libraries</Filter>
+    </Text>
+    <Text Include="..\..\..\..\..\Desktop\LICENSE_1_0.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="..\..\..\..\..\Desktop\lgpl-2.1.txt">
+      <Filter>Libraries</Filter>
+    </Text>
+    <Text Include="..\..\..\..\..\Desktop\gpl.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AndysOpenCLApp.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Babasse-Bagg-And-Boxs-Carte-graphique.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
