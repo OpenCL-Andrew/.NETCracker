@@ -3,7 +3,7 @@ An OpenCL Password Cracking Framework, supporting PBKDF2-HMAC-SHA1, HMAC-SHA1 &a
 
 This repository holds the code for the paper: 'Acceleration Attacks on PBKDF2', which was presented at The USENIX Symposium on Computer Security, in Austin, Texas on the 8th August 2016.
 
-The paper is part of the symposiums 10th Workshop On Offensive Technologies (WOOT) and is available here:
+The paper is part of the 25th USENIX Security Symposium's 10th Workshop On Offensive Technologies (WOOT) and is available here:
 https://www.usenix.org/system/files/conference/woot16/woot16-paper-ruddick.pdf
 
 The presentation we gave is available here:
